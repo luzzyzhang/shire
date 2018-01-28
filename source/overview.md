@@ -3,26 +3,32 @@
 <!-- TOC -->
 
 - [Bird's-eye view](#birds-eye-view)
-    - [Programming language](#programming-language)
-    - [Operating system](#operating-system)
+    - [Coding skills](#coding-skills)
+        - [Programming language](#programming-language)
     - [System Design](#system-design)
+    - [CS knowledge](#cs-knowledge)
+        - [Operating systems](#operating-systems)
 
 <!-- /TOC -->
 
-## Programming language
+## Coding skills
+
+### Programming language
 
 - `Python`
 - `C`
 - `Go`
 - `Rust`
 
-## Operating system
-
-- `UNIX`
-- `Linux`
-
 ## System Design
 
 - Databases：`MySQL` `Redis`
 - Frameworks：`Django` `Flask`
 - Infrastructure ：`Nginx` `Celery`
+
+## CS knowledge
+
+### Operating systems
+
+- `UNIX`
+- `Linux`
