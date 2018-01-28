@@ -1,18 +1,28 @@
-## 地表全貌
+# Bird's-eye view
 
-### 编程语言
-  - `Python`
-  - `C`
-  - `Go`
-  - `Rust`
+<!-- TOC -->
 
-### 操作系统
-  - `UNIX`
-  - `Linux`
+- [Bird's-eye view](#birds-eye-view)
+    - [Programming language](#programming-language)
+    - [Operating system](#operating-system)
+    - [System Design](#system-design)
 
-### 系统设计
-  - 数据库：`MySQL` `Redis`
-  - 框架：`Django` `Flask`
-  - 组件：`Nginx` `Celery`
+<!-- /TOC -->
 
- 
+## Programming language
+
+- `Python`
+- `C`
+- `Go`
+- `Rust`
+
+## Operating system
+
+- `UNIX`
+- `Linux`
+
+## System Design
+
+- Databases：`MySQL` `Redis`
+- Frameworks：`Django` `Flask`
+- Infrastructure ：`Nginx` `Celery`

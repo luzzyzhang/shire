@@ -1,3 +1,3 @@
-# shire
+# Shire
 
 > `Sphinx` + `GitHub` + `ReadtheDocs`
