@@ -5,7 +5,7 @@
 - [Bird's-eye view](#birds-eye-view)
     - [Coding skills](#coding-skills)
         - [Programming language](#programming-language)
-    - [System Design](#system-design)
+    - [System design](#system-design)
     - [CS knowledge](#cs-knowledge)
         - [Operating systems](#operating-systems)
 
@@ -20,7 +20,7 @@
 - `Go`
 - `Rust`
 
-## System Design
+## System design
 
 - Databases：`MySQL` `Redis`
 - Frameworks：`Django` `Flask`

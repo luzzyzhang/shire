@@ -10,9 +10,11 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+   :glob:
     
    home
    overview
+   chapters/*
 
 
 
