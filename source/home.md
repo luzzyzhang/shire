@@ -6,6 +6,9 @@
     - [Coding skills](#coding-skills)
         - [Programming language](#programming-language)
     - [System design](#system-design)
+        - [Databases](#databases)
+        - [Frameworks](#frameworks)
+        - [Infrastructure](#infrastructure)
     - [CS knowledge](#cs-knowledge)
         - [Operating systems](#operating-systems)
 
@@ -22,9 +25,17 @@
 
 ## System design
 
-- Databases：`MySQL` `Redis`
-- Frameworks：`Django` `Flask`
-- Infrastructure ：`Nginx` `Celery`
+### Databases
+
+- `MySQL` `Redis`
+
+### Frameworks
+
+- `Django` `Flask`
+
+### Infrastructure
+
+- `Nginx` `Celery`
 
 ## CS knowledge
 
