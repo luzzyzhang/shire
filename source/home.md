@@ -1,43 +1,34 @@
 # Welcome to Shire
 
-## `The Zen of Python, by Tim Peters`
+<!-- TOC -->
 
-```
-Beautiful is better than ugly.
+- [Welcome to Shire](#welcome-to-shire)
+    - [Coding skills](#coding-skills)
+        - [Programming language](#programming-language)
+    - [System design](#system-design)
+    - [CS knowledge](#cs-knowledge)
+        - [Operating systems](#operating-systems)
 
-Explicit is better than implicit.
+<!-- /TOC -->
 
-Simple is better than complex.
+## Coding skills
 
-Complex is better than complicated.
+### Programming language
 
-Flat is better than nested.
+- `Python`
+- `C`
+- `Go`
+- `Rust`
 
-Sparse is better than dense.
+## System design
 
-Readability counts.
+- Databases：`MySQL` `Redis`
+- Frameworks：`Django` `Flask`
+- Infrastructure ：`Nginx` `Celery`
 
-Special cases aren't special enough to break the rules.
+## CS knowledge
 
-Although practicality beats purity.
+### Operating systems
 
-Errors should never pass silently.
-
-Unless explicitly silenced.
-
-In the face of ambiguity, refuse the temptation to guess.
-
-There should be one-- and preferably only one --obvious way to do it.
-
-Although that way may not be obvious at first unless you're Dutch.
-
-Now is better than never.
-
-Although never is often better than *right* now.
-
-If the implementation is hard to explain, it's a bad idea.
-
-If the implementation is easy to explain, it may be a good idea.
-
-Namespaces are one honking great idea -- let's do more of those
-```
+- `UNIX`
+- `Linux`
