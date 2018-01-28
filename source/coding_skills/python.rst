@@ -10,3 +10,4 @@ Python Skills
    :glob:
 
    ./python/*
+   ./rust/*
