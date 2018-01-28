@@ -1,5 +1,5 @@
 =============================
-Python Skills
+Rust programming language
 =============================
 
 
@@ -9,4 +9,4 @@ Python Skills
    :maxdepth: 1
    :glob:
 
-   ./python/*
+   ./rust/*
