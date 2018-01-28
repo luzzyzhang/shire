@@ -1,19 +1,5 @@
 # Welcome to Shire
 
-<!-- TOC -->
-
-- [Welcome to Shire](#welcome-to-shire)
-    - [Coding skills](#coding-skills)
-        - [Programming language](#programming-language)
-    - [System design](#system-design)
-        - [Databases](#databases)
-        - [Frameworks](#frameworks)
-        - [Infrastructure](#infrastructure)
-    - [CS knowledge](#cs-knowledge)
-        - [Operating systems](#operating-systems)
-
-<!-- /TOC -->
-
 ## Coding skills
 
 ### Programming language
@@ -41,5 +27,4 @@
 
 ### Operating systems
 
-- `UNIX`
-- `Linux`
+- `UNIX/Linux`
