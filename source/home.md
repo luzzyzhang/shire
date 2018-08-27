@@ -3,14 +3,11 @@
 <!-- TOC -->
 
 - [Welcome to Shire(测试中)](#welcome-to-shire测试中)
-    - [测试中](#测试中)
     - [Coding skills](#coding-skills)
     - [System design](#system-design)
     - [CS knowledge](#cs-knowledge)
 
 <!-- /TOC -->
-
-## 测试中
 
 ## Coding skills
 
@@ -22,8 +19,6 @@
 - `Rust`
 
 ### Data structure and algorithm
-
-- `LeetCode`
 
 ## System design
 
@@ -37,7 +32,7 @@
 
 ### Infrastructure Components
 
-- `Nginx` `Celery`
+- `Nginx` `Celery` `Docker`
 
 ## CS knowledge
 
