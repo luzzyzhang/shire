@@ -12,3 +12,5 @@
    :glob:
 
    ../system_design/*
+   ../system_design/bird/index.md
+   ../system_design/frog/index.md
