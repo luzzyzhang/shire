@@ -3,7 +3,9 @@
 系统设计概览
 =============================
 
+鸟与青蛙
 Birds's-eyes view
+Frog dive into detail
 
 
 
@@ -12,4 +14,5 @@ Birds's-eyes view
    :maxdepth: 1
    :glob:
 
-   ./study_list/*
+   ./bird/*
+   ./frog/*
