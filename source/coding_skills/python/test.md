@@ -1,6 +1,6 @@
 # Python
 
-> Learn from open sorce project `Sentry`
+## Learn from open sorce project `Sentry`
 
 ```python
 from __future__ import absolute_import
