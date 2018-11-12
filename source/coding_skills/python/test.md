@@ -1,9 +1,152 @@
-# Python 介绍
+# Python
 
-## 简介
+```python
+from __future__ import absolute_import
 
-Python（英国发音：/ˈpaɪθən/ 美国发音：/ˈpaɪθɑːn/），是一种广泛使用的高级编程语言，属于通用型编程语言，由吉多·范罗苏姆 创造，第一版发布于 1991 年。可以视之为一种改良 (加入一些其他编程语言的优点，如面向对象) 的 LISP。作为一种解释型语言，Python 的设计哲学强调代码的可读性和简洁的语法（尤其是使用空格缩进划分代码块，而非使用大括号或者关键词）。相比于 C++ 或 Java，Python 让开发者能够用更少的代码表达想法。不管是小型还是大型程序，该语言都试图让程序的结构清晰明了。
+from datetime import datetime
 
-与 Scheme、Ruby、Perl、Tcl 等动态类型编程语言一样，Python 拥有动态类型系统和垃圾回收功能，能够自动管理内存使用，并且支持多种编程范式，包括面向对象、命令式、函数式和过程式编程。其本身拥有一个巨大而广泛的标准库。
+from sentry.integrations.github.utils import get_jwt
+from sentry.integrations.client import ApiClient
 
-Python 虚拟机本身几乎可以在所有的操作系统中运行。Python 的正式解释器CPython是用 C语言编写的、是一个由社区驱动的自由软件，目前由 Python软件基金会管理。
+
+class GitHubClientMixin(ApiClient):
+    allow_redirects = True
+
+    base_url = 'https://api.github.com'
+
+    def get_jwt(self):
+        return get_jwt()
+
+    def get_last_commits(self, repo, end_sha):
+        # return api request that fetches last ~30 commits
+        # see https://developer.github.com/v3/repos/commits/#list-commits-on-a-repository
+        # using end_sha as parameter
+        return self.get(
+            u'/repos/{}/commits'.format(
+                repo,
+            ),
+            params={'sha': end_sha},
+        )
+
+    def compare_commits(self, repo, start_sha, end_sha):
+        # see https://developer.github.com/v3/repos/commits/#compare-two-commits
+        # where start sha is oldest and end is most recent
+        return self.get(u'/repos/{}/compare/{}...{}'.format(
+            repo,
+            start_sha,
+            end_sha,
+        ))
+
+    def get_pr_commits(self, repo, num):
+        # see https://developer.github.com/v3/pulls/#list-commits-on-a-pull-request
+        # Max: 250 Commits
+        return self.get(u'/repos/{}/pulls/{}/commits'.format(
+            repo,
+            num
+        ))
+
+    def repo_hooks(self, repo):
+        return self.get(u'/repos/{}/hooks'.format(repo))
+
+    def get_commits(self, repo):
+        return self.get(u'/repos/{}/commits'.format(repo))
+
+    def get_repo(self, repo):
+        return self.get(u'/repos/{}'.format(repo))
+
+    def get_repositories(self):
+        repositories = self.get(
+            '/installation/repositories',
+            params={'per_page': 100},
+        )
+        return repositories['repositories']
+
+    def search_repositories(self, query):
+        return self.get(
+            '/search/repositories',
+            params={'q': query},
+        )
+
+    def get_assignees(self, repo):
+        return self.get(u'/repos/{}/assignees'.format(repo))
+
+    def get_issues(self, repo):
+        return self.get(u'/repos/{}/issues'.format(repo))
+
+    def search_issues(self, query):
+        return self.get(
+            '/search/issues',
+            params={'q': query},
+        )
+
+    def get_issue(self, repo, number):
+        return self.get(u'/repos/{}/issues/{}'.format(repo, number))
+
+    def create_issue(self, repo, data):
+        endpoint = u'/repos/{}/issues'.format(repo)
+        return self.post(endpoint, data=data)
+
+    def create_comment(self, repo, issue_id, data):
+        endpoint = u'/repos/{}/issues/{}/comments'.format(repo, issue_id)
+        return self.post(endpoint, data=data)
+
+    def get_user(self, gh_username):
+        return self.get(u'/users/{}'.format(gh_username))
+
+    def request(self, method, path, headers=None, data=None, params=None):
+        if headers is None:
+            headers = {
+                'Authorization': 'token %s' % self.get_token(),
+                # TODO(jess): remove this whenever it's out of preview
+                'Accept': 'application/vnd.github.machine-man-preview+json',
+            }
+        return self._request(method, path, headers=headers, data=data, params=params)
+
+    def get_token(self):
+        """
+        Get token retrieves the active access token from the integration model.
+        Should the token have expried, a new token will be generated and
+        automatically presisted into the integration.
+        """
+        token = self.integration.metadata.get('access_token')
+        expires_at = self.integration.metadata.get('expires_at')
+
+        if expires_at is not None:
+            expires_at = datetime.strptime(expires_at, '%Y-%m-%dT%H:%M:%S')
+
+        if not token or expires_at < datetime.utcnow():
+            res = self.create_token()
+            token = res['token']
+            expires_at = datetime.strptime(
+                res['expires_at'],
+                '%Y-%m-%dT%H:%M:%SZ',
+            )
+
+            self.integration.metadata.update({
+                'access_token': token,
+                'expires_at': expires_at.isoformat(),
+            })
+            self.integration.save()
+
+        return token
+
+    def create_token(self):
+        return self.post(
+            u'/installations/{}/access_tokens'.format(
+                self.integration.external_id,
+            ),
+            headers={
+                'Authorization': 'Bearer %s' % self.get_jwt(),
+                # TODO(jess): remove this whenever it's out of preview
+                'Accept': 'application/vnd.github.machine-man-preview+json',
+            },
+        )
+
+
+class GitHubAppsClient(GitHubClientMixin):
+
+    def __init__(self, integration):
+        self.integration = integration
+        super(GitHubAppsClient, self).__init__()
+
+```
