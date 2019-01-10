@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Rust programming language &mdash; shire 0.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="第三章：系统设计" href="../../chapters/c03_system_design.html" />
+    <link rel="prev" title="Rust programming language" href="../rust.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> shire
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/c01_overview.html">第一章：全局概览</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../chapters/c02_coding_skills.html">第二章：编码技艺</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../python.html">Python Skills</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../rust.html">Rust programming language</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Rust programming language</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#">简介</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">特点</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/c03_system_design.html">第三章：系统设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/c04_cs_knowledge.html">第三章：基础知识</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/c05_dev_tools.html">第四章：工具利器</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/c06_book_notes.html">第六章：读书笔记</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">shire</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../chapters/c02_coding_skills.html">第二章：编码技艺</a> &raquo;</li>
+        
+          <li><a href="../rust.html">Rust programming language</a> &raquo;</li>
+        
+      <li>Rust programming language</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/coding_skills/rust/rust.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="rust-programming-language">
+<span id="rust-programming-language"></span><h1>Rust programming language<a class="headerlink" href="#rust-programming-language" title="永久链接至标题">¶</a></h1>
+<div class="section" id="">
+<span id="id1"></span><h2>简介<a class="headerlink" href="#" title="永久链接至标题">¶</a></h2>
+<p>Rust 是一种系统编程语言。 它有着惊人的运行速度，能够防止段错误，并保证线程安全。</p>
+<blockquote>
+<div>Rust is a programming language that’s focused on safety, speed, and concurrency.
+Its design lets you create programs that have the performance and control of a low-level language, but with the powerful abstractions of a high-level language.
+These properties make Rust suitable for programmers who have experience in languages like C and are looking for a safer alternative,
+as well as those from languages like Python who are looking for ways to write code that performs better without sacrificing expressiveness.</div></blockquote>
+</div>
+<div class="section" id="">
+<span id="id2"></span><h2>特点<a class="headerlink" href="#" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li>零开销抽象</li>
+<li>转义语义</li>
+<li>保证内存安全</li>
+<li>线程无数据竞争</li>
+<li>基于 trait 的泛型</li>
+<li>模式匹配</li>
+<li>类型推断</li>
+<li>极小运行时</li>
+<li>高效 C 绑定</li>
+</ul>
+</div>
+<div class="section" id="">
+<span id="id3"></span><h2>实例<a class="headerlink" href="#" title="永久链接至标题">¶</a></h2>
+<div class="highlight-rust"><div class="highlight"><pre><span></span><span class="k">fn</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">greetings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;Hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Hola&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Bonjour&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                     </span><span class="s">&quot;Ciao&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;こんにちは&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;안녕하세요&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                     </span><span class="s">&quot;Cześć&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Olá&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Здравствуйте&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                     </span><span class="s">&quot;Chào bạn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;您好&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Hallo&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                     </span><span class="s">&quot;Hej&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Ahoj&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;سلام&quot;</span><span class="p">];</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="p">,</span><span class="w"> </span><span class="n">greeting</span><span class="p">)</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">greetings</span><span class="p">.</span><span class="n">iter</span><span class="p">().</span><span class="n">enumerate</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">print</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;{} : &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">greeting</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">match</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="mi">0</span><span class="w"> </span><span class="o">=&gt;</span><span class="w">  </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;This code is editable and runnable!&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">1</span><span class="w"> </span><span class="o">=&gt;</span><span class="w">  </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;¡Este código es editable y ejecutable!&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">2</span><span class="w"> </span><span class="o">=&gt;</span><span class="w">  </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;Ce code est modifiable et exécutable !&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">3</span><span class="w"> </span><span class="o">=&gt;</span><span class="w">  </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;Questo codice è modificabile ed eseguibile!&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">4</span><span class="w"> </span><span class="o">=&gt;</span><span class="w">  </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;このコードは編集して実行出来ます！&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">5</span><span class="w"> </span><span class="o">=&gt;</span><span class="w">  </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;여기에서 코드를 수정하고 실행할 수 있습니다!&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">6</span><span class="w"> </span><span class="o">=&gt;</span><span class="w">  </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;Ten kod można edytować oraz uruchomić!&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">7</span><span class="w"> </span><span class="o">=&gt;</span><span class="w">  </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;Este código é editável e executável!&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">8</span><span class="w"> </span><span class="o">=&gt;</span><span class="w">  </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;Этот код можно отредактировать и запустить!&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">9</span><span class="w"> </span><span class="o">=&gt;</span><span class="w">  </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;Bạn có thể edit và run code trực tiếp!&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">10</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;这段代码是可以编辑并且能够运行的！&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">11</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;Dieser Code kann bearbeitet und ausgeführt werden!&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">12</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;Den här koden kan redigeras och köras!&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">13</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;Tento kód můžete upravit a spustit&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="mi">14</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;این کد قابلیت ویرایش و اجرا دارد!&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">            </span><span class="n">_</span><span class="w"> </span><span class="o">=&gt;</span><span class="w">  </span><span class="p">{},</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../chapters/c03_system_design.html" class="btn btn-neutral float-right" title="第三章：系统设计" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../rust.html" class="btn btn-neutral" title="Rust programming language" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; 版权所有 2017, luzzyzhang.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.1',
+            LANGUAGE:'zh_CN',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: ''
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
