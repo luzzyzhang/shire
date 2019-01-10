@@ -4,7 +4,7 @@
 
 - [Read code](#read-code)
     - [`Sentry` code snippet](#sentry-code-snippet)
-    - [Django auth user model](#django-auth-user-model)
+    - [`Django` auth user model](#django-auth-user-model)
 
 <!-- /TOC -->
 
@@ -161,7 +161,7 @@ class GitHubAppsClient(GitHubClientMixin):
 
 ```
 
-## Django auth user model
+## `Django` auth user model
 
 > 胖 model 瘦 control
 
