@@ -163,7 +163,7 @@ class GitHubAppsClient(GitHubClientMixin):
 
 ## `Django` auth user model
 
-> 胖 model 瘦 control
+> **胖 model 瘦 control**
 
 ```python
 class UserManager(models.Manager):
