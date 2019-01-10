@@ -12,4 +12,4 @@
    :maxdepth: 1
    :glob:
 
-   ../book_notes/*
+   ../book-notes/*

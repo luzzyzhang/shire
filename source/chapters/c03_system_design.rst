@@ -11,6 +11,6 @@
    :maxdepth: 1
    :glob:
 
-   ../system_design/*
-   ../system_design/bird/index.md
-   ../system_design/frog/index.md
+   ../system-design/*
+   ../system-design/bird/index.md
+   ../system-design/frog/index.md

@@ -12,4 +12,4 @@
    :maxdepth: 1
    :glob:
 
-   ../cs_knowledge/*
+   ../cs-knowledge/*

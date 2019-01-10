@@ -10,4 +10,4 @@
    :maxdepth: 1
    :glob:
 
-   ../coding_skills/*
+   ../coding-skills/*

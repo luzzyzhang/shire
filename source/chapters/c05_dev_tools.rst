@@ -12,4 +12,4 @@
    :maxdepth: 1
    :glob:
 
-   ../dev_tools/*
+   ../dev-tools/*
