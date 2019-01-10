@@ -36,7 +36,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
     'sphinx_markdown_tables',
-    'sphinxcontrib.disqus',
+    # 'sphinxcontrib.disqus',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -447,3 +447,5 @@ def setup(app):
         True
     )
     app.add_transform(AutoStructify)
+
+disqus_shortname = 'luzzy-disqus'
