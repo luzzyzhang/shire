@@ -3,10 +3,27 @@
 <!-- TOC -->
 
 - [Read code](#read-code)
+    - [Test table](#test-table)
     - [`Sentry` code snippet](#sentry-code-snippet)
     - [`Django` auth user model](#django-auth-user-model)
 
 <!-- /TOC -->
+
+## Test table
+
+```eval_rst
++------------+------------+-----------+ 
+| Header 1   | Header 2   | Header 3  | 
++============+============+===========+ 
+| body row 1 | column 2   | column 3  | 
++------------+------------+-----------+ 
+| body row 2 | Cells may span columns.| 
++------------+------------+-----------+ 
+```
+
+ A |  B | C
+ --- | --- | ---
+ a | d | e
 
 ## `Sentry` code snippet
 

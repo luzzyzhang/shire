@@ -1,6 +1,6 @@
 # The Zen of Python
 
-```doc
+```
 Beautiful is better than ugly.
 
 Explicit is better than implicit.
