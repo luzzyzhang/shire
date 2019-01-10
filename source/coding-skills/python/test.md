@@ -3,17 +3,10 @@
 <!-- TOC -->
 
 - [Read code](#read-code)
-    - [test table](#test-table)
     - [`Sentry` code snippet](#sentry-code-snippet)
     - [`Django` auth user model](#django-auth-user-model)
 
 <!-- /TOC -->
-
-## test table
-
- A |  B | C
- --- | --- | ---
- a | d | E
 
 ## `Sentry` code snippet
 
