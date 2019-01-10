@@ -1,6 +1,14 @@
-# test
+# Read code
 
-## Learn from open sorce project `Sentry`
+<!-- TOC -->
+
+- [Read code](#read-code)
+    - [`Sentry` code snippet](#sentry-code-snippet)
+    - [Django auth user model](#django-auth-user-model)
+
+<!-- /TOC -->
+
+## `Sentry` code snippet
 
 ```python
 from __future__ import absolute_import
