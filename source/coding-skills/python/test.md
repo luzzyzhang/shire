@@ -3,15 +3,10 @@
 <!-- TOC -->
 
 - [Read code](#read-code)
-    - [Test image](#test-image)
     - [`Sentry` code snippet](#sentry-code-snippet)
     - [`Django` auth user model](#django-auth-user-model)
 
 <!-- /TOC -->
-
-## Test image
-
-![干净整洁的代码](../../images/t.png)
 
 ## `Sentry` code snippet
 
