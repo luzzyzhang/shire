@@ -1,22 +1,30 @@
-# Everything about Regular Expression
+# Everything about Rregular Expression
 
-## Regular Expression
+<!-- TOC -->
+
+- [Everything about Rregular Expression](#everything-about-rregular-expression)
+    - [What is regex](#what-is-regex)
+    - [Methods and Attribute](#methods-and-attribute)
+    - [Example](#example)
+    - [References](#references)
+
+<!-- /TOC -->
 
 ## What is regex
 
 - Regex solve this problems:
 
-  > Q: `Does this string match the pattern?`
+  Q: `Does this string match the pattern?`
 
-  > A: `match -- find something from the beginning of the string, and return it`
+  A: `match -- find something from the beginning of the string, and return it`
 
-  > Q: `Is there a match for the pattern anywhere in this string?`
+  Q: `Is there a match for the pattern anywhere in this string?`
 
-  > A: `search -- find something anywhere in the string, and return it`
+  A: `search -- find something anywhere in the string, and return it`
 
 - A picture is worth a thousand words
 
-  ![r](http://wiki.python.org/moin/RegularExpression?action=AttachFile&do=get&target=regex_characters.png)
+  ![regx-picture](http://wiki.python.org/moin/RegularExpression?action=AttachFile&do=get&target=regex_characters.png)
 
 ## Methods and Attribute
 
@@ -60,8 +68,11 @@ sp = pattern.search('you')
 def is_valid_email(string):
     email_pattern = re.compile(r'[^@]+@[^@]+\.[^@]+')
     return True if email_pattern.match(string) else False
-assert is_valid_email('abc-123@gmail.com')
-assert not is_valid_email('abc@')
+
+
+def test_is_valid_email():
+    assert is_valid_email('abc-123@gmail.com')
+    assert not is_valid_email('abc@')
 
 # Greedy vs. Non-Greedy
 >>> re.match(r'<.*>', '<html>abc</html><a>happy</a>').group()  # greedy
