@@ -10,3 +10,4 @@ Golang
    :glob:
 
    ./golang/*
+   ./golang/gopl/*

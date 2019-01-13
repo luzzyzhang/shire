@@ -1,6 +1,6 @@
 # The Go Programming language
 
-> Go 程序设计语言
+Go 程序设计语言笔记
 
 ## 前言
 
