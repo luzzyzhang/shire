@@ -32,4 +32,4 @@
 
 .. raw:: html
 
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/2vMEQ5zs1ko?rel=0" frameborder="0" allowfullscreen></iframe>
+    <iframe width="690" height="315" src="http://www.youtube.com/embed/2vMEQ5zs1ko?rel=0" frameborder="0" allowfullscreen></iframe>
