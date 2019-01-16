@@ -209,3 +209,7 @@ Run the ``init-db`` command:
 
 There will now be a ``flaskr.sqlite`` file in the ``instance`` folder in
 your project.
+
+.. raw:: html
+
+    <iframe width="690" height="315" src="https://www.youtube.com/embed/2vMEQ5zs1ko?rel=0" frameborder="0" allowfullscreen></iframe>

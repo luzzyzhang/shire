@@ -27,9 +27,3 @@
     数学的世界既辽阔又深刻，我们需要鸟们和青蛙们协同努力来探索。
 
     From 《鸟与青蛙》by 弗里曼•戴森
-
-
-
-.. raw:: html
-
-    <iframe width="690" height="315" src="https://www.youtube.com/embed/2vMEQ5zs1ko?rel=0" frameborder="0" allowfullscreen></iframe>
