@@ -3,6 +3,7 @@
 <!-- TOC -->
 
 - [Read code](#read-code)
+    - [Property demo](#property-demo)
     - [`Sentry` code snippet](#sentry-code-snippet)
     - [`Django` auth user model](#django-auth-user-model)
     - [`Requests` code show](#requests-code-show)
@@ -10,6 +11,52 @@
 <!-- /TOC -->
 
 > 收集代码世界里的吉光片羽
+
+## Property demo
+
+```python
+import math
+
+class Square(object):
+    """A square with two properties: a writable area and a read-only perimeter.
+
+    To use:
+    >>> sq = Square(3)
+    >>> sq.area
+    9
+    >>> sq.perimeter
+    12
+    >>> sq.area = 16
+    >>> sq.side
+    4
+    >>> sq.perimeter
+    16
+    """
+
+    def __init__(self, side):
+        self.side = side
+
+    @property
+    def area(self):
+        """Gets or sets the area of the square."""
+        return self._get_area()
+
+    @area.setter
+    def area(self, area):
+        return self._set_area(area)
+
+    def _get_area(self):
+        """Indirect accessor to calculate the 'area' property."""
+        return self.side ** 2
+
+    def _set_area(self, area):
+        """Indirect setter to set the 'area' property."""
+        self.side = math.sqrt(area)
+
+    @property
+    def perimeter(self):
+        return self.side * 4
+```
 
 ## `Sentry` code snippet
 
