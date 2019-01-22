@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>The Go Programming language &mdash; shire 0.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="Python" href="../../python.html" />
+    <link rel="prev" title="Golang" href="../../golang.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> shire
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../chapters/c01-overview.html">第一章：全局概览</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../chapters/c02-coding-skills.html">第二章：编码技艺</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../golang.html">Golang</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">The Go Programming language</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">前言</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">安装环境搭建指南</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">本书示例代码</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../rust.html">Rust</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../chapters/c03-system-design.html">第三章：系统设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../chapters/c04-cs-knowledge.html">第四章：基础知识</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../chapters/c05-dev-tools.html">第五章：工具利器</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../chapters/c06-book-notes.html">第六章：读书笔记</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">shire</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../chapters/c02-coding-skills.html">第二章：编码技艺</a> &raquo;</li>
+        
+          <li><a href="../../golang.html">Golang</a> &raquo;</li>
+        
+      <li>The Go Programming language</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/coding-skills/golang/gopl/index.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="the-go-programming-language">
+<h1>The Go Programming language<a class="headerlink" href="#the-go-programming-language" title="永久链接至标题">¶</a></h1>
+<p>Go 程序设计语言笔记</p>
+<div class="section" id="id1">
+<h2>前言<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li>Go 语言及其配套工具集意在使得<strong>编译和执行</strong>都能够<strong>富有表达能力和效率</strong>, 而且使得程序员能够<strong>写出可靠、健壮的程序</strong></li>
+<li>Communicating Sequential Process(CSP)中程序就是一组无共享状态进程的并行组合，进程间通信和同步采用信道完成</li>
+<li>在不断要求增加系统功能和选项以及配置，还要求快速发布的压力之下，简单性往往被忽视了–尽管长期来看<strong>简单性才是好软件的不二法门</strong></li>
+<li>要实现简单性，就要在项目的一开始将思想浓缩至本质，并在项目的整个生命周期多保持一些自律，认识到那些变化是好的，哪些变化是坏的或致命的。</li>
+<li><strong>KISS</strong></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>安装环境搭建指南<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id3">
+<h2>本书示例代码<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">go</span> <span class="pre">get</span> <span class="pre">gopl.io</span></code></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../python.html" class="btn btn-neutral float-right" title="Python" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../../golang.html" class="btn btn-neutral" title="Golang" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, luzzyzhang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../../_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
