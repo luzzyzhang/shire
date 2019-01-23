@@ -3,7 +3,7 @@
 ===================
 
 
-《Redis 实战》--> 《Redis开发与运维》-->《Redis 设计与实现》
+《Redis 实战》==> 《Redis开发与运维》==>《Redis 设计与实现》
 
 .. toctree::
    :maxdepth: 2
