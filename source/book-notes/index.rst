@@ -9,3 +9,5 @@
 .. toctree::
    :maxdepth: 1
    :glob:
+
+   ./redis/*
