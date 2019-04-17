@@ -9,7 +9,7 @@
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
 
-   ../book-notes/*
+   ../book-notes/*/*

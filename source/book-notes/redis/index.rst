@@ -2,24 +2,12 @@
 深入理解 Redis
 ===================
 
-
 《Redis 实战》-> 《Redis开发与运维》->《Redis 设计与实现》
-
-.. toctree::
-   :maxdepth: 2
-
-
-Redis 使用
---------------------
-
-Redis 维护
---------------------
-
-Redis 原理
---------------------
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   ./
+   ./redis-in-action/index.rst
+   ./redis-design/index.rst
+   ./redis-operation/index.rst
