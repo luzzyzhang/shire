@@ -25,7 +25,9 @@
     :raises keyError: raises an exception
     """
     ```
+
 - Google 风格
+
     ```python
     """
     This is an example of Google style.
@@ -41,7 +43,9 @@
         KeyError: Raises an exception.
     """
     ```
+
 - Numpydoc 风格
+
     ```python
     """
     My numpydoc description of a kind
