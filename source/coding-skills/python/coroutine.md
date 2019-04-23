@@ -4,6 +4,7 @@
 
 - [Async IO & Coroutine](#async-io--coroutine)
     - [Questions](#questions)
+    - [Summary](#summary)
     - [Async IO](#async-io)
     - [Python `asyncio` package and `async/await`](#python-asyncio-package-and-asyncawait)
     - [Async IO design patterns](#async-io-design-patterns)
@@ -21,9 +22,24 @@
 - How to create native coroutine
 - Relationship of coroutine and asyncio
 
+## Summary
+
+- Asynchronous IO as a language-agnostic model and a way to effect concurrency by letting **coroutines** indirectly communicate with each other
+- The specifics of Python’s new `async` and `await` keywords, used to mark and define coroutines
+- `asyncio`, the Python package that provides the API to run and manage coroutines
+
 ## Async IO
 
 ### What is Async IO
+
+- Async IO is a style of concurrent programming, but it is not parallelism. It’s more closely aligned with threading than with multiprocessing but is very much distinct from both of these and is a standalone member in concurrency’s bag of tricks.
+- Async IO is a single-threaded, single-process design: it uses cooperative multitasking.
+- It has been said in other words that async IO gives a feeling of concurrency despite using a single thread in a single process.
+- Coroutines (a central feature of async IO) can be scheduled concurrently, but they are not inherently concurrent.
+- Asynchronous routines are able to “pause” while waiting on their ultimate result and let other routines run in the meantime.
+- Asynchronous code, through the mechanism above, facilitates concurrent execution. To put it differently, asynchronous code gives the look and feel of concurrency.
+- Async IO takes long waiting periods in which functions would otherwise be blocking and allows other functions to run during that downtime. (A function that blocks effectively forbids others from running from the time that it starts until the time that it returns.)
+- Explain: 国际象棋大师1vn，饭店服务员点餐
 
 ### Where Async IO fit in
 
