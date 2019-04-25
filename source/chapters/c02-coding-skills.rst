@@ -9,5 +9,8 @@
 .. toctree::
    :maxdepth: 1
    :glob:
+   :reversed:
 
-   ../coding-skills/*
+   ../coding-skills/python/index*
+   ../coding-skills/golang/index*
+   ../coding-skills/rust/index*

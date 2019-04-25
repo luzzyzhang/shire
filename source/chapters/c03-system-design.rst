@@ -4,14 +4,14 @@
 
 高可用高可靠可扩展系统设计研究
 
+鸟与青蛙 Birds's-eyes view Frog dive into detail
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   ../system-design/*
-   ../system-design/bird/index.md
-   ../system-design/frog/index.md
+   ../system-design/bird/index.rst
+   ../system-design/frog/index.rst
 
 .. note::
 

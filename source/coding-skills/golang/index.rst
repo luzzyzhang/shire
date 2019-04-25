@@ -1,11 +1,6 @@
-
 =============================
-概览
+Golang
 =============================
-
-鸟与青蛙
-Birds's-eyes view
-Frog dive into detail
 
 
 
@@ -14,5 +9,5 @@ Frog dive into detail
    :maxdepth: 1
    :glob:
 
-   ./bird/*
-   ./frog/*
+   *
+   ./gopl/*
