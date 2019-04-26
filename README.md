@@ -9,6 +9,10 @@
 3. [远程访问][shire-url]
 4. [Read the doc project 管理地址][rtfd-manage]
 
+## `shire` 项目结构
+
+`index.rst` -> `chapters` -> `chapter-1` -> `package` has `index.rst` directory
+
 ---
 [shire-url]: http://shire.readthedocs.io/
 [rtfd-manage]: https://readthedocs.org/projects/shire/
