@@ -17,7 +17,7 @@ Introduction
 
 代码 `500code`_
 
-原文 `introduce'_
+原文 `introduce`_
 
 
 .. _500lines: http://aosabook.org/en/index.html
