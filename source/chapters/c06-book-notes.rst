@@ -12,4 +12,5 @@
    :maxdepth: 2
    :glob:
 
+   ../book-notes/index.rst
    ../book-notes/*/*
