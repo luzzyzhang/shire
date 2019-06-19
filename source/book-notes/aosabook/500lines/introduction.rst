@@ -15,8 +15,11 @@ Introduction
 
 地址 `500lines`_
 
-代码 `500code`_.
+代码 `500code`_
+
+原文 `introduce'_
 
 
 .. _500lines: http://aosabook.org/en/index.html
 .. _500code: https://github.com/aosabook/500lines 
+.. _introduce: http://aosabook.org/en/500L/introduction.html
