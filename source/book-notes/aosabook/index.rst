@@ -8,7 +8,6 @@ The Architecture of Open Source Applications [`1`_]
 .. toctree::
     :maxdepth: 2
     :glob:
-    :reversed:
 
    ./500lines/index.rst
 
