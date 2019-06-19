@@ -1,6 +1,15 @@
 =============================
-Introduction
+500 Lines or less
 =============================
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   ./*
+
+Introduction
+------------
 
 500 Lines or Less focuses on the design decisions that programmers make in the small when they are building something new. 
 

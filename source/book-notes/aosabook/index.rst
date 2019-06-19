@@ -6,10 +6,10 @@ AOSA
 The Architecture of Open Source Applications [`1`_]
 
 .. toctree::
-   :maxdepth: 1
-   :glob:
-   :reversed:
+    :maxdepth: 2
+    :glob:
+    :reversed:
 
-   ./500lines/*
+   ./500lines/index.rst
 
 .. _1: http://aosabook.org/en/index.html
