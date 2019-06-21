@@ -82,3 +82,75 @@ what
   The term is a one-line phrase, and the definition is one or more
   paragraphs or body elements, indented relative to the term.
   Blank lines are not allowed between term and definition.
+
+Preformatting(code samples)
+===========================
+
+An example::
+
+    Whitespace, newlines, blank lines, and all kinds of markup
+      (like *this* or \this) is preserved by literal blocks.
+  Lookie here, I've dropped an indentation level
+  (but not far enough)
+
+no more example
+
+
+::
+
+    This is preformatted text, and the
+    last "::" paragraph is removed
+
+
+Section
+=======
+
+To break longer text up into sections, you use section headers.
+
+These are a single line of text (one or more words) with adornment: 
+an underline alone, or an underline and an overline together, 
+in dashes “``-----``”, equals “``======``”, tildes “``~~~~~~``”
+or any of the non-alphanumeric characters “`= -  :  ' " ~ ^ _ * + # < >`”
+that you feel comfortable with. 
+
+An underline-only adornment is distinct from an overline-and-underline adornment using the same character.
+
+*The underline/overline must be at least as long as the title text.*
+
+Be consistent, since all sections marked with the same adornment style are deemed to be at the same level:
+
+
+::
+
+    Chapter 1 Title
+    ===============
+
+    Section 1.1 Title
+    -----------------
+
+    Subsection 1.1.1 Title
+    ~~~~~~~~~~~~~~~~~~~~~~
+
+    Section 1.2 Title
+    -----------------
+
+    Chapter 2 Title
+    ===============
+
+
+Document Title / Subtitle
+-------------------------
+
+
+::
+    ================
+    Document Title
+    ================
+    ----------
+    Subtitle
+    ----------
+
+    Section Title
+    =============
+
+    ... 
