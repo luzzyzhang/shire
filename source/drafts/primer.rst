@@ -27,7 +27,7 @@ Text styles
 
 *This is a italics* and **This is Bold** all of this called *inline markup*
 
-``double back-block`` `code` ``*``  ``*no inside the double back-quotes work *``
+``double back-block`` `hello` ``func main()`` ``*``  ``*no inside the double back-quotes work *``
 
 Lists
 =====
