@@ -120,37 +120,5 @@ An underline-only adornment is distinct from an overline-and-underline adornment
 Be consistent, since all sections marked with the same adornment style are deemed to be at the same level:
 
 
-::
-
-    Chapter 1 Title
-    ===============
-
-    Section 1.1 Title
-    -----------------
-
-    Subsection 1.1.1 Title
-    ~~~~~~~~~~~~~~~~~~~~~~
-
-    Section 1.2 Title
-    -----------------
-
-    Chapter 2 Title
-    ===============
-
-
 Document Title / Subtitle
 -------------------------
-
-
-::
-    ================
-    Document Title
-    ================
-    ----------
-    Subtitle
-    ----------
-
-    Section Title
-    =============
-
-    ... 
