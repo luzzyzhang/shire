@@ -12,5 +12,7 @@
    :reversed:
 
    ../coding-skills/python/index
-   ../coding-skills/golang/index
+   ../coding-skills/go/index
    ../coding-skills/rust/index
+   ../coding-skills/C/index
+   ../coding-skills/C++/index
