@@ -1,7 +1,6 @@
-==========================
-The C Programming Language
-==========================
-
+==
+C
+==
 
 .. toctree::
    :maxdepth: 1
