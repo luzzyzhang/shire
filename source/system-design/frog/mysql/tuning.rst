@@ -53,5 +53,8 @@ These two structures explain most of the database's performance characteristics.
 The Index Leaf Nodes
 --------------------
 
+How to structure index
+~~~~~~~~~~~~~~~~~~~~~~
+
 
 
