@@ -8,10 +8,9 @@ Learning skill and mindset
 `Blieve you can change`_
 ========================
 
-Two kind of mindset
--------------------
-    **Growth mindset**
-    **Fixed mindset**
+.. note::
+
+    Two kind of mindset: **Growth mindset** vs **Fixed mindset**. 
     Try to change you mindset to `Growth mindset`
 
 Growth mindset
@@ -75,6 +74,26 @@ Fixed mindset
 
 - Fixies are afraid to try hard because if they fail, it means they’re a failure. 
 - Growthers are afraid of not trying.
+
+- In relationships, growth-mindset people looked for partners who would push them to be better, 
+  fixies just wanted someone who would put them on a pedestal (and got into terrible fights when they hit problems). 
+  Even in sports, growther athletes got better and better through constant practice, 
+  while fixies blamed their atrophying skills on everyone around them.
+
+How to start `Growth mindset`
+-----------------------------
+
+- The first step to getting better is believing you can get better.
+- Try to approach the problem as a chance to grow, rather than a test of our abilities. 
+  It’s no longer scary, it’s just another project to work on.
+- For example, I used to think I was introverted. 
+  Everyone had always told me that you were either an extroverted person or an introverted person. 
+  From a young age, I was quite shy and bookish, so it seemed obvious: I was an introvert. 
+  But as I’ve grown, I’ve found that’s hardly the end of the story. 
+  I’ve started to get good at leading a conversation or cracking people up with a joke. 
+  I like telling stories at a party a story or buzzing about a room saying ‘hi’ to people. 
+  I get a rush from it! Sure, I’m still not the most party-oriented person I know, 
+  but I no longer think we fit into any neat introversion/extroversion buckets.
 
 
 
