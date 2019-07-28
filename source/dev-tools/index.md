@@ -15,7 +15,7 @@
 
 ## 文档工具
 
-- [Read the doc](https://docs.readthedocs.io/en/stable/)
+- [Read the Docs](https://docs.readthedocs.io/en/stable/)
 - [Sphinx](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html)
 - [MkDocs](https://docs.readthedocs.io/en/stable/intro/getting-started-with-mkdocs.html)
 - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
