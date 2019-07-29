@@ -8,10 +8,11 @@ Welcome to shire
 
 **学而不思则罔，思而不学则殆**
 
-- What is X?
-- When to use X? (or Why to use X?)
-- How to use X?
-- How x design and implement?
+W2H2:
+    - What is X? (or What it can do?)
+    - When to use X? (or Why to use it?)
+    - How to use X?
+    - How x design and implement?
 
 Contents:
 
