@@ -8,12 +8,17 @@ Welcome to shire
 
 **学而不思则罔，思而不学则殆**
 
+- What is X?
+- When to use X? (or Why to use X?)
+- How to use X?
+- How x design and implement?
+
 Contents:
 
 .. toctree::
    :maxdepth: 2
    :glob:
-    
+
    chapters/*
 
 
