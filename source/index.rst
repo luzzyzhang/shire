@@ -3,10 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to shire
+管窥锥指
 =================================
-
-**学而不思则罔，思而不学则殆**
 
 W2H2:
     - What is X
